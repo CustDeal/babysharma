@@ -8,13 +8,20 @@
     <style>
         body { min-height: 100vh; display:flex; align-items:center; justify-content:center; background:#f8f9fa; }
         .card { max-width: 520px; }
+		.logo { width: 300px; height: auto; object-fit: contain; border-radius: 16px; }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="card shadow mx-auto p-4 text-center">
-        <h1 class="h4 mb-2">You’re Offline</h1>
-        <p class="text-muted mb-4">Please enable mobile data or Wi-Fi to continue.</p>
+		<img class="logo mx-auto mb-3" src="logo.png" alt="App Logo">
+		<!--h2 class="h3 fw-bold mb-1">Baby Sharma</h2>
+        <p class="text-muted mb-3">Empowering Business Through Technology</p-->
+		<div class="text-center"><div class="spinner-border" role="status" aria-hidden="true"></div></div>
+		<h1 class="h4 mb-2">Uh Oh! You Seem to be Offline</h1>
+		<p class="text-muted mb-4">
+			It looks like we lost the connection for a moment. Please check your <strong>Wi-Fi</strong> or <strong>Mobile Data</strong> settings to get back online!
+		</p>
         <div class="d-grid gap-2">
             <!-- This link is handled by the app to open system settings -->
             <a class="btn btn-primary btn-lg" href="app://open-settings">Enable Data / Wi-Fi</a>
