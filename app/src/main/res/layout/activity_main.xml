@@ -19,13 +19,17 @@
         android:layout_height="match_parent"
         android:visibility="gone"
         android:foregroundGravity="center"
-        android:background="@android:color/transparent">
+        android:background="@android:color/transparent" 
+		android:clickable="true"
+		android:focusable="true">
 
         <!-- semi-transparent background -->
         <View
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#80000000" />
+            android:background="#80000000" 
+			android:clickable="true"
+			android:focusable="true" />
 
         <!-- center card with spinner and text -->
         <LinearLayout
